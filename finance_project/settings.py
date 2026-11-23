@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     # project apps
+    "allapps.users.apps.UsersConfig",
     "allapps.tracker.apps.TrackerConfig",
 ]
 
@@ -131,5 +132,5 @@ INTERNAL_IPS = [
     # ...
 ]
 
-AUTH_USER_MODEL = "tracker.User"
+AUTH_USER_MODEL = "users.User"
 LOGIN_REDIRECT_URL = "index"
