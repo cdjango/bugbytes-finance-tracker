@@ -1,5 +1,3 @@
-from importlib import import_module
-
 from django.apps import AppConfig
 
 
@@ -8,4 +6,4 @@ class UsersConfig(AppConfig):
     name = "allapps.users"
 
     def ready(self):
-        import_module("allapps.users.signals")
+        from . import signals  # noqa: F401

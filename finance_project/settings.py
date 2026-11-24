@@ -34,8 +34,8 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     # project apps
-    "allapps.users.apps.UsersConfig",
-    "allapps.tracker.apps.TrackerConfig",
+    "allapps.users",
+    "allapps.tracker",
 ]
 
 SITE_ID = 1
